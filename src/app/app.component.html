@@ -1,0 +1,56 @@
+<clr-main-container>
+    <clr-header class="header-5">
+        <div class="branding">
+            <a href="#" class="nav-link">
+                <span class="clr-icon clr-clarity-logo"></span>
+                <span class="title">ระบบข้อมูลตัวชี้วัดสำนักงานสาธารณสุขจังหวัดอุบลราชธานี ปีงบประมาณ 2560</span>
+            </a>
+        </div>
+
+        <div class="header-actions">
+        </div>
+    </clr-header>
+    <div class="content-container">
+        <div class="content-area">
+            <router-outlet></router-outlet>
+        </div>
+        <clr-vertical-nav [clrVerticalNavCollapsible]="true" [(clrVerticalNavCollapsed)]="collapsed">
+            <a clrVerticalNavLink routerLink="/home" routerLinkActive="active">
+                <clr-icon clrVerticalNavIcon shape="user"></clr-icon>
+                PA 2560
+            </a>
+            <a clrVerticalNavLink routerLink="/about" routerLinkActive="active">
+                <clr-icon clrVerticalNavIcon shape="bolt"></clr-icon>
+                Service Plan
+            </a>
+            <a clrVerticalNavLink routerLink="./poison" routerLinkActive="active">
+                <clr-icon clrVerticalNavIcon shape="sad-face"></clr-icon>
+                QOF
+            </a>
+            <a clrVerticalNavLink routerLink="./grass" routerLinkActive="active">
+                <clr-icon clrVerticalNavIcon shape="bug"></clr-icon>
+                ตรวจราชการ
+            </a>
+            <a clrVerticalNavLink routerLink="./fighting" routerLinkActive="active">
+                <clr-icon clrVerticalNavIcon shape="shield"></clr-icon>
+                ตัวชี้วัดกระทรวง
+            </a>
+            <a clrVerticalNavLink routerLink="./credit" routerLinkActive="active">
+                <clr-icon clrVerticalNavIcon shape="certificate"></clr-icon>
+                อื่น ๆ
+            </a>
+            <a clrVerticalNavLink routerLink="./credit" routerLinkActive="active">
+                <clr-icon clrVerticalNavIcon shape="certificate"></clr-icon>
+                User
+            </a>
+            <a clrVerticalNavLink routerLink="/userlevel" routerLinkActive="active">
+                <clr-icon clrVerticalNavIcon shape="certificate"></clr-icon>
+                User Level
+            </a>
+            <a clrVerticalNavLink routerLink="/profile" routerLinkActive="active">
+                <clr-icon clrVerticalNavIcon shape="certificate"></clr-icon>
+                Profiles
+            </a>
+        </clr-vertical-nav>
+    </div>
+</clr-main-container>
