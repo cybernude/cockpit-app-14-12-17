@@ -10,6 +10,8 @@
 
 
   <clr-dg-row *clrDgItems="let l of alluserlevel">
+      <!-- <app-userlists></app-userlists> -->
+      <app-userlists [selecTedLevelId]="l.ul_id" *clrIfExpanded ngProjectAs="clr-dg-row-detail"></app-userlists>
       <clr-dg-action-overflow>
           <button class="action-item" (click)="Showedit(l)">แก้ไขข้อมูล</button>
           <button class="action-item" (click)="deleteData(l)">ลบข้อมูล</button>

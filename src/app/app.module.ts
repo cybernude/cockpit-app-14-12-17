@@ -16,6 +16,9 @@ import { UserlevelService} from './userlevel.service';
 import { UserlevelComponent } from './userlevel/userlevel.component';
 
 
+//import modules 
+import { DirectivesModule } from './directives/directives.module';
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -30,6 +33,7 @@ import { UserlevelComponent } from './userlevel/userlevel.component';
         FormsModule,
         HttpModule,
         ClarityModule,
+        DirectivesModule,
         ROUTING
     ],
     providers: [
